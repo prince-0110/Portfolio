@@ -115,6 +115,15 @@ a:hover{
     color: #769069;
     text-decoration: none; /* icons shouldn't underline */
 }
+
+/* hamburger toggle — hidden on desktop, shown only in the small-screen media query below */
+.nav-toggle{
+    display: none;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+}
+
 /** panel **/
 .panel{
     height: 40px;
@@ -285,4 +294,107 @@ ul a{
 }
 .copyright{
     padding-top: 5px;
+}
+
+/* =========================================================
+   RESPONSIVE — everything below is additive only.
+   Nothing above this line was changed, so the design is
+   identical on desktop. These rules just make it adapt
+   on smaller screens instead of overflowing/breaking.
+   ========================================================= */
+
+/* Tablets: cards go 2-per-row instead of a fixed 23.5% */
+@media (max-width: 1024px){
+    .box{
+        width: 47%;
+        height: auto;
+        min-height: 380px;
+    }
+}
+
+/* Small tablets / large phones: collapse the nav into a hamburger */
+@media (max-width: 768px){
+    .navbar{
+        height: auto;
+        flex-wrap: wrap;
+        padding: 12px 20px;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .nav-right{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        margin-top: 12px;
+        order: 3;
+    }
+    .nav-right.open{
+        display: flex;
+    }
+    .nav-search{
+        width: 100%;
+    }
+    .social{
+        width: auto;
+        gap: 20px;
+    }
+    .panel{
+        height: auto;
+        flex-wrap: wrap;
+        padding: 8px 10px;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .panel-ops{
+        width: auto;
+    }
+    .hero-section{
+        height: 320px;
+    }
+    .hero-msg{
+        width: 92%;
+        height: auto;
+        padding: 10px;
+    }
+    .shop-section{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .box{
+        width: 100%;
+    }
+    .foot-panel2{
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        gap: 20px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px){
+    .nav-logo{
+        width: 120px;
+        height: 40px;
+    }
+    .nav-author{
+        display: none; /* keep the top bar from crowding on very small screens */
+    }
+    .hero-section{
+        height: 260px;
+    }
+    .hero-msg{
+        font-size: 0.8rem;
+    }
+    .foot-panel3{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+    .d{
+        margin-left: 10px;
+    }
 }

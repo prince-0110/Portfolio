@@ -23,7 +23,12 @@
                 </div>
             </div>
 
-            <div class="nav-right">
+            <!-- New: hamburger button, only visible on small screens (see CSS) -->
+            <div class="nav-toggle" id="navToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="nav-right" id="navRight">
                 <div class="nav-search">
                     <input placeholder="Search" class="search-input">
                     <div class="search-icon">
@@ -180,5 +185,12 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Toggles the mobile nav menu open/closed. No effect on desktop widths.
+        document.getElementById('navToggle').addEventListener('click', function(){
+            document.getElementById('navRight').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
