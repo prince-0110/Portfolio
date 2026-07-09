@@ -134,7 +134,7 @@ a:hover{
     align-items: center;
     justify-content: space-evenly;
 }
-.panel-ops p{
+.panel-ops a{
     display: inline;
     margin-left: 10px;
 }
