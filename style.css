@@ -26,7 +26,7 @@ a:hover{
 .nav-right{
     display: flex;
     align-items: center;
-    gap: 30px; /* spacing between search bar and social icons */
+    gap: 30px;
 }
 .nav-logo{
     height: 50px;
@@ -58,7 +58,7 @@ a:hover{
     color: #769069;
 }
 
-/* search — now perfectly centered regardless of screen width */
+/* search */
 .nav-search{
     display: flex;
     align-items: center;
@@ -113,7 +113,7 @@ a:hover{
 }
 .social-icon:hover{
     color: #769069;
-    text-decoration: none; /* icons shouldn't underline */
+    text-decoration: none;
 }
 
 /* hamburger toggle — hidden on desktop, shown only in the small-screen media query below */
@@ -152,7 +152,7 @@ body{
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* stays put while page scrolls, nice parallax feel */
+    background-attachment: fixed;
     min-height: 100vh;
     color: white;
 }
