@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: underline;
+}
+.navbar{
+    height: 60px;
+    background-color: #1F1E20;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-logo{
+    height: 50px;
+    width: 160px;
+}
+.logo{
+    height: 100%;
+    width: 100%;
+    background-image: url("wuk72_logo_white_text.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+    cursor: pointer;
+}
+.nav-author{
+    margin-left: 20px;
+}
+#nav-i{
+    font-size: 0.7rem;
+    color: #769069;
+}
+.nav-ii{
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #769069;
+}
+
+/* search */
+.nav-search{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 300px;
+}
+.search-input{
+    height: 30px;
+    width: 100%;
+    font-size: 1rem;
+    color: white; /* fixes invisible text */
+    background-color: #1F1E20;
+    border: none;
+    border-bottom: 4px solid #303A3E;
+    padding: 0 5px;
+}
+.search-input::placeholder{
+    color: #888888;
+}
+.search-input:focus{
+    outline: none;
+}
+.search-icon{
+    height: 100%;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #1F1E20;
+    color: #303A3E;
+    cursor: pointer;
+}
+
+/* social */
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+}
+.social-icon{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.social-icon:hover{
+    color: #769069;
+    text-decoration: none;
+}
+
+/* hamburger toggle — hidden on desktop, shown only in the small-screen media query below */
+.nav-toggle{
+    display: none;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+}
+
+/** panel **/
+.panel{
+    height: 40px;
+    width: 100%;
+    background-color: #303A3E;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-ops a{
+    display: inline;
+    margin-left: 10px;
+}
+.panel-ops{
+    width: 78%;
+    font-size: 0.85rem;
+}
+.panel-deals{
+    font-size: 0.9rem;
+}
+
+/* hero section */
+body{
+    background-image: url("wuk-background.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+}
+
+.hero-section{
+    height: 800px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+/* About section */
+.box1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.box2{
+    height: 100%;
+    width: 100%;
+    background-color: #303A3E;
+    margin: 2rem;
+    border-radius: 50px;
+}
+.box2 h3 {
+    color: #769069;
+}
+.paragraph{
+    margin: 2rem;
+}
+.code{
+    color: #769069;
+}
+.box3{
+    height: 600px;
+    width: 250px;
+    background-color: #303A3E;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 2rem;
+    border-radius: 50px;
+    display: block;
+}
+.box4{
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border: 0.75rem solid #1F1E20;
+    border-radius: 50%;
+    margin: 2rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+.textbox{
+    font-size: 0.8rem;
+    padding: 20px;
+    padding-top: 0rem;
+    color: #769069;
+}
+.en {
+    color: #ffffff;
+}
+
+
+/* footer */
+footer{
+    margin-top: 100px;
+}
+
+.foot-panel1{
+    background-color: #4C6350;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+.foot-panel2{
+    background-color: #303A3E;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 40px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+ul a{
+    color: #dddddd;
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.foot-panel3{
+
+    background-color: #303A3E;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.pborder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid white;
+    height: 40px;
+    width: 120px
+}
+.d{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+.pages{
+    padding-top: 25px;
+}
+.pages a{
+    color: white;
+    padding-right: 5px;
+}
+.copyright{
+    padding-top: 5px;
+}
+
+/* =========================================================
+   RESPONSIVE — everything below is additive only.
+   Nothing above this line was changed, so the design is
+   identical on desktop. These rules just make it adapt
+   on smaller screens instead of overflowing/breaking.
+   ========================================================= */
+
+/* Tablets: cards go 2-per-row instead of a fixed 23.5% */
+@media (max-width: 1024px){
+    .box{
+        width: 47%;
+        height: auto;
+        min-height: 380px;
+    }
+
+    /* ADDED: About page — bio card + profile card start to breathe a bit
+       before they need to fully stack at the phone breakpoint below */
+    .box3{
+        width: 220px;
+    }
+}
+
+/* Small tablets / large phones: collapse the nav into a hamburger */
+@media (max-width: 768px){
+    .navbar{
+        height: auto;
+        flex-wrap: wrap;
+        padding: 12px 20px;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .nav-right{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        margin-top: 12px;
+        order: 3;
+    }
+    .nav-right.open{
+        display: flex;
+    }
+    .nav-search{
+        width: 100%;
+    }
+    .social{
+        width: auto;
+        gap: 20px;
+    }
+    .panel{
+        height: auto;
+        flex-wrap: wrap;
+        padding: 8px 10px;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .panel-ops{
+        width: auto;
+    }
+    .hero-section{
+        height: 320px;
+    }
+    .hero-msg{
+        width: 92%;
+        height: auto;
+        padding: 10px;
+    }
+    .shop-section{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .box{
+        width: 100%;
+    }
+    .foot-panel2{
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        gap: 20px;
+    }
+
+    /* ADDED: About page — the bio card (box2) and profile card (box3) were
+       sitting side-by-side with a fixed 800px hero-section, which clipped
+       the long bio text on small screens. Stack them instead and let the
+       section grow to fit the content. */
+    .hero-section{
+        height: auto;
+        padding: 20px 0;
+    }
+    .box1{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* ADDED: once box2/box3 stack, show the profile card (box3) first,
+       above the bio text (box2), without touching the HTML order */
+    .box2{
+        order: 2;
+    }
+    .box3{
+        order: 1;
+    }
+    .box2{
+        margin: 1rem;
+        height: auto;
+        border-radius: 24px; /* smaller radius reads better on a narrower card */
+    }
+    .paragraph{
+        margin: 1rem;
+    }
+    .box3{
+        width: 92%;
+        height: auto;
+        margin: 1rem auto;
+    }
+    .box4{
+        margin: 1.5rem auto 1rem;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px){
+    .nav-logo{
+        width: 120px;
+        height: 40px;
+    }
+    .nav-author{
+        display: none; /* keep the top bar from crowding on very small screens */
+    }
+    .hero-section{
+        height: 260px;
+    }
+    /* ADDED: re-override the fixed height above — About page needs the
+       section to size to its (stacked) content on phones too, not 260px */
+    .hero-section{
+        height: auto;
+    }
+    .hero-msg{
+        font-size: 0.8rem;
+    }
+    .foot-panel3{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+    .d{
+        margin-left: 10px;
+    }
+
+    /* ADDED: About page — tighten spacing further and shrink the profile
+       photo so the bio card and card text don't feel oversized on phones */
+    .box2{
+        margin: 0.75rem;
+        border-radius: 16px;
+    }
+    .paragraph{
+        margin: 0.75rem;
+        font-size: 0.9rem; /* long bio paragraphs stay readable without overflowing */
+    }
+    .box3{
+        width: 96%;
+    }
+    .box4{
+        height: 150px;
+        width: 150px;
+    }
+    .textbox{
+        font-size: 0.75rem;
+        padding: 15px;
+    }
+
+    /* ADDED: footer link groups go 2-per-row instead of one long stacked column */
+    .foot-panel2 ul{
+        width: 42%;
+    }
+}
