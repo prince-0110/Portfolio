@@ -137,6 +137,7 @@ a:hover{
 .panel-ops a{
     display: inline;
     margin-left: 10px;
+    cursor: pointer;
 }
 .panel-ops{
     width: 78%;
@@ -294,6 +295,10 @@ ul a{
 }
 .copyright{
     padding-top: 5px;
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* =========================================================
