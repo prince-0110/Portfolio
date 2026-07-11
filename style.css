@@ -200,7 +200,7 @@ a:hover{
 .menu:hover .arrow {
     transform: rotate(180deg);
 }
-/* ------------------------------- */
+/* --------------------------------------------- */
 .panel-ops a{
     display: inline;
     margin-left: 10px;
